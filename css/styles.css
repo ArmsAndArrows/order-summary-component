@@ -1,0 +1,132 @@
+:root {
+  --paleblue: hsl(225, 100%, 94%);
+  --brightblue: hsl(245, 75%, 52%);
+  --verypaleblue: hsl(225, 100%, 98%);
+  --desaturatedblue: hsl(224, 23%, 55%);
+  --darkblue: hsl(223, 47%, 23%);
+  --graycustom: rgba(119, 112, 112, 0.863);
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background: url(../images/pattern-background-desktop.svg) no-repeat fixed;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 1.6rem;
+}
+
+.card {
+  position: relative;
+  margin: 20% auto;
+  max-width: 40rem;
+  max-height: 100rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 2rem;
+  box-shadow: 0 1rem 5rem 20px hsla(245, 75%, 52%, 0.212);
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-header {
+  flex: 1;
+  font-weight: 900;
+  font-size: 2.6rem;
+  margin: 4rem 0 0.5rem;
+}
+
+.card-text {
+  margin: 1rem;
+  width: 28rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--graycustom);
+  margin-bottom: 3rem;
+}
+
+.plan-table {
+  background-color: var(--verypaleblue);
+  height: 3rem;
+  width: 81%;
+  padding: 1rem 2rem;
+  border-radius: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.plan {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.price {
+  color: var(--graycustom);
+  font-size: 1.4rem;
+}
+
+.change-plan {
+  text-align: right;
+}
+
+#chpl {
+  color: var(--brightblue);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#chpl:hover {
+  color: var(--desaturatedblue);
+}
+
+.btn-submit {
+  width: 81%;
+  background-color: var(--brightblue);
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 1.4rem;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  margin-top: 1.8rem;
+  box-shadow: 0 1rem 2rem 0.3rem hsla(245, 75%, 52%, 0.404);
+}
+
+.btn-submit:hover {
+  background-color: hsla(245, 75%, 52%, 0.829);
+}
+
+.btn-cancel {
+  width: 81%;
+  background: transparent;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: var(--desaturatedblue);
+  padding: 1.5rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.btn-cancel:hover {
+  color: rgba(37, 36, 36, 0.877);
+}
+@media screen and (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding-bottom: 1.2rem;
+  }
+}
